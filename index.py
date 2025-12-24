@@ -24,7 +24,7 @@ for i, win in enumerate(browsers):
         print(f"Fokus ke Chrome #{i + 1} - {win.title}")
         time.sleep(3)
 
-        input_box = pyautogui.locateOnScreen('input.png', confidence=0.7)
+        input_box = pyautogui.locateOnScreen('box.png', confidence=0.7)
 
         if input_box: 
             center_x, center_y = pyautogui.center(input_box)
